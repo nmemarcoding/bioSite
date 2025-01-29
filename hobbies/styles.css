@@ -1,0 +1,201 @@
+/* General Styles */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Lora', serif;
+    background-color: #F3E9DC;
+    color: #3D3D3D;
+}
+
+/* Top Heading */
+.top-heading {
+    text-align: center;
+    padding: 40px 20px;
+    background-color: #7D3C37;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.top-heading h1 {
+    margin: 0;
+    color: #FFFFFF;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 48px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+/* Navigation Bar */
+.navbar {
+    background-color: #1B1B1B;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.nav-menu {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+}
+
+.nav-menu li {
+    display: inline;
+}
+
+.nav-menu a {
+    color: #C89B3C;
+    font-size: 18px;
+    font-family: 'Montserrat', sans-serif;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    transition: background 0.3s ease;
+}
+
+.nav-menu a:hover, 
+.nav-menu a.active {
+    background-color: #C89B3C;
+    color: #1B1B1B;
+}
+
+/* Hobbies Section */
+.hobbies {
+    padding: 80px 20px;
+    max-width: 1200px;
+    margin: auto;
+    text-align: center;
+}
+
+.hobbies h2 {
+    font-family: 'Montserrat', sans-serif;
+    color: #7D3C37;
+    font-size: 42px;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+.hobbies p {
+    font-size: 20px;
+    max-width: 800px;
+    margin: auto;
+}
+
+/* Hobbies Grid Layout */
+.hobbies-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+.hobby {
+    width: 100%;
+    max-width: 360px;
+    text-align: center;
+    background-color: #FFF;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.hobby img {
+    width: 100%;
+    max-height: 250px; /* Set max height to avoid long images */
+    border-radius: 8px;
+    object-fit: cover
+    
+}
+
+.hobby h3 {
+    color: #C89B3C;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 24px;
+    margin-top: 20px;
+}
+
+.hobby p {
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+/* Footer */
+.footer {
+    background-color: #1B1B1B;
+    padding: 20px;
+    text-align: center;
+    margin-top: 40px;
+}
+
+.footer p {
+    color: #F3E9DC;
+    font-size: 16px;
+}
+
+/* Responsive Design */
+
+
+/* Footer */
+.footer {
+    background-color: #1B1B1B;
+    padding: 20px;
+    text-align: center;
+    margin-top: 40px;
+}
+
+.footer p {
+    color: #F3E9DC;
+    font-size: 16px;
+}
+
+@media (max-width: 768px) {
+    .nav-menu {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .nav-menu a {
+        font-size: 20px;
+        padding: 15px;
+    }
+
+    .hero h2 {
+        font-size: 32px;
+    }
+
+    .hero p {
+        font-size: 18px;
+    }
+
+    .btn-primary {
+        font-size: 18px;
+        padding: 12px 24px;
+    }
+}
+
+@media (max-width: 480px) {
+    .top-heading h1 {
+        font-size: 28px;
+    }
+
+    .nav-menu {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .nav-menu a {
+        display: block;
+        font-size: 20px;
+        padding: 15px;
+    }
+
+    .hero h2 {
+        font-size: 28px;
+    }
+
+    .hero p {
+        font-size: 16px;
+    }
+}
